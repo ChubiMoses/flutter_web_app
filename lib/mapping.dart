@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/src/widgets/placeholder.dart';
 import 'package:test/screens/mobile/mobile_one_screen.dart';
 import 'package:test/screens/web/web_one_screen.dart.dart';
 import 'package:test/utils/responsive_helper.dart';

@@ -1,4 +1,4 @@
-import 'package:test/screens/mapping.dart';
+import 'package:test/mapping.dart';
 import 'package:test/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
