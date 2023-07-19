@@ -1,4 +1,4 @@
-import 'package:test/screens/web/web_one_screen.dart.dart';
+import 'package:test/screens/mapping.dart';
 import 'package:test/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         fontFamily:AppStyles.lato,
       ),
-      home:  const WebOneScreen()
+      home: const Mapping()
     );
   }
 }
