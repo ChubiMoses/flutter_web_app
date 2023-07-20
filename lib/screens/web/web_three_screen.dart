@@ -1,6 +1,6 @@
 import 'package:test/screens/widgets/web/header_widget.dart';
+import 'package:test/screens/widgets/web/web_navigation_button.dart';
 import 'package:test/screens/widgets/web/web_three_content.dart';
-import 'package:test/screens/widgets/web/web_three_navigation.dart';
 import 'package:test/utils/curve_painter.dart';
 import 'package:flutter/material.dart';
 
@@ -32,7 +32,7 @@ class _HomeScreenState extends State<WebThreeScreen> {
                   children: const [
                     WebHearder(),
                     SizedBox(height: 100,),
-                    WebThreeNavigation(),
+                    WebNavigation(),
                      SizedBox(height: 50,),
                      WebThreeContent(),
                     SizedBox(height: 100,),

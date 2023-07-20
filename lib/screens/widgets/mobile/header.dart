@@ -25,13 +25,13 @@ class HeaderWidget extends StatelessWidget {
               style: AppStyles.headerTextStyle)),
                 SvgPicture.asset(
                   'assets/svgs/undraw_agreement_aajr.svg',
-                  width: 400,
+                  width: MediaQuery.of(context).size.width,
                 ),
                 ],
               ),
         ),
             Positioned(
-            top: 500,
+            top: 510,
               child: Center(
                 child: Container(
                 decoration:  BoxDecoration(
@@ -63,7 +63,7 @@ class HeaderWidget extends StatelessWidget {
                           ),
                         ),
                       ),
-                        const SizedBox(height: 30,),
+                        const SizedBox(height: 100,),
                     ],
                   ),
                 ),

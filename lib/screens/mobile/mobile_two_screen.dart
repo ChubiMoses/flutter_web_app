@@ -1,6 +1,6 @@
-import 'package:test/screens/components/header.dart';
+import 'package:test/screens/widgets/mobile/header.dart';
+import 'package:test/screens/widgets/mobile/mobile_navigation.dart';
 import 'package:test/screens/widgets/mobile/mobile_two_content.dart';
-import 'package:test/screens/widgets/mobile/mobile_two_navigation.dart';
 import 'package:test/utils/app_colors.dart';
 import 'package:test/utils/curve_painter.dart';
 import 'package:flutter/material.dart';
@@ -18,6 +18,7 @@ class _MobileOneState extends State<MobileTwoScreen> {
     return Scaffold(
       backgroundColor: AppColors.white,
         body: SafeArea(
+            left: false,right: false,
       child: SingleChildScrollView(
         child: SizedBox(
           child: Stack(
@@ -31,9 +32,9 @@ class _MobileOneState extends State<MobileTwoScreen> {
                   children: const [
                     HeaderWidget(),
                     SizedBox(
-                      height: 20,
+                      height: 50,
                     ),
-                    MobileTwoNavigation(),
+                    MobileNavigation(),
                     SizedBox(
                       height: 50,
                     ),

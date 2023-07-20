@@ -1,9 +1,19 @@
+import 'package:provider/provider.dart';
 import 'package:test/mapping.dart';
+import 'package:test/provider/provider.dart';
 import 'package:test/utils/app_styles.dart';
 import 'package:flutter/material.dart';
 
+
 void main() {
-  runApp(const MyApp());
+  runApp(
+    MultiProvider(
+      providers: [
+        ChangeNotifierProvider(create: (_) => ScreenSliderProvider()),
+      ],
+      child: const MyApp(),
+    ),
+  );
 }
 
 class MyApp extends StatelessWidget {

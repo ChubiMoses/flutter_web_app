@@ -1,6 +1,6 @@
-import 'package:test/screens/components/header.dart';
+import 'package:test/screens/widgets/mobile/header.dart';
+import 'package:test/screens/widgets/mobile/mobile_navigation.dart';
 import 'package:test/screens/widgets/mobile/mobile_three_content.dart';
-import 'package:test/screens/widgets/mobile/mobile_three_navigation.dart';
 import 'package:test/utils/app_colors.dart';
 import 'package:test/utils/curve_painter.dart';
 import 'package:flutter/material.dart';
@@ -18,7 +18,8 @@ class _MobileOneState extends State<MobileThreeScreen> {
     return Scaffold(
        backgroundColor: AppColors.white,
         body: SafeArea(
-      child: SingleChildScrollView(
+         left: false,right: false,
+        child: SingleChildScrollView(
         child: SizedBox(
           child: Stack(
             children: [
@@ -31,9 +32,9 @@ class _MobileOneState extends State<MobileThreeScreen> {
                   children: const [
                     HeaderWidget(),
                     SizedBox(
-                      height: 20,
+                      height: 50,
                     ),
-                    MobileThreeNavigation(),
+                    MobileNavigation(),
                     SizedBox(
                       height: 50,
                     ),
